@@ -23,6 +23,16 @@ O projeto integra Python, Pandas, SQL Server e Power BI, abrangendo preparação
 
 ## 📊 Dashboard Power BI
 
+## 💡 Principais insights de negócio
+
+- **Crescimento do faturamento:** aumento de 20,36% em 2017 em relação a 2016.
+- **Evolução do lucro:** crescimento de 14,24% na comparação anual.
+- **Margem de lucro:** redução de 0,68 ponto percentual, indicando a importância de acompanhar a rentabilidade.
+- **Desempenho regional:** West lidera o faturamento, seguida por East.
+- **Rentabilidade por segmento:** Consumer apresenta o maior lucro entre os segmentos analisados.
+
+Esses indicadores demonstram como a análise de dados pode apoiar o acompanhamento do desempenho comercial e a identificação de oportunidades de melhoria.
+
 O relatório contém quatro páginas analíticas.
 
 ### 1. Visão Executiva
