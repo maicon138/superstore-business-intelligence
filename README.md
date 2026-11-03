@@ -70,6 +70,18 @@ Os scripts estão disponíveis na pasta `SQL/`:
 
 ## 🐍 Script Python
 
+
+### Instalação das dependências
+
+Certifique-se de ter o Python instalado. No terminal, execute:
+
+```bash
+pip install -r requirements.txt
+```
+
+Para executar o ETL, configure as variáveis de ambiente necessárias para o caminho do CSV e a conexão com o SQL Server antes de executar o script.
+
+
 O script `Python/etl_superstore.py` demonstra o processo de ETL utilizado para ler o CSV, tratar os dados e carregá-los no SQL Server.
 
 Para executá-lo, é necessário configurar o ambiente local, instalar as dependências e ajustar o caminho do CSV e as variáveis de conexão ao SQL Server.
