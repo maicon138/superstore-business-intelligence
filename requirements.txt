@@ -1,1 +1,5 @@
 
+pandas
+SQLAlchemy
+pyodbc
+
