@@ -1,48 +1,39 @@
-# superstore-business-intelligence
-Projeto de análise de vendas com Python, Pandas, SQL Server e Power BI.
-# 📊 Superstore — Business Intelligence & Sales Analytics
-
-## Sobre o projeto
+# Superstore — Business Intelligence & Sales Analytics
 
 Projeto de Business Intelligence desenvolvido para analisar o desempenho comercial da base Sample Superstore, transformando dados de vendas em informações relevantes para apoiar a tomada de decisão.
 
-O projeto contempla preparação de dados com Python, armazenamento e consultas no SQL Server e desenvolvimento de um dashboard interativo no Power BI.
+O projeto integra Python, Pandas, SQL Server e Power BI, abrangendo preparação de dados, consultas SQL, modelagem de dados, indicadores e visualizações interativas.
 
 ## 🎯 Objetivos
 
 - Analisar faturamento, lucro, margem de lucro, quantidade de pedidos e ticket médio.
 - Identificar produtos com melhor desempenho e produtos que geram prejuízo.
 - Comparar resultados entre regiões geográficas.
-- Avaliar o desempenho dos diferentes segmentos de clientes.
+- Avaliar o desempenho dos segmentos de clientes.
 - Acompanhar a evolução mensal das vendas e comparar períodos.
 
 ## 🛠️ Tecnologias utilizadas
 
-- **Python:** preparação e tratamento dos dados.
-- **Pandas:** manipulação e análise dos dados.
-- **SQLAlchemy:** conexão entre Python e SQL Server.
-- **SQL Server:** armazenamento dos dados, consultas SQL e criação de views.
-- **Power BI:** criação do dashboard interativo.
+- **Python e Pandas:** leitura, preparação e tratamento dos dados.
+- **SQLAlchemy:** integração entre Python e SQL Server.
+- **SQL Server:** armazenamento dos dados e criação de views SQL.
+- **Power BI:** desenvolvimento do dashboard interativo.
 - **DAX:** criação de medidas e indicadores.
-- **Modelagem de dados:** organização dos dados e relacionamento com a tabela calendário.
+- **Modelagem de dados:** organização dos relacionamentos e utilização de tabela calendário.
 
-## 📈 Dashboard
+## 📊 Dashboard Power BI
 
-O relatório foi organizado em quatro páginas:
-
-## 📈 Dashboard Interativo
-
-O dashboard foi desenvolvido no Power BI e está organizado em quatro páginas para explorar diferentes perspectivas do desempenho comercial.
+O relatório contém quatro páginas analíticas.
 
 ### 1. Visão Executiva
 
-Visão geral dos principais indicadores: faturamento, lucro, margem, pedidos e ticket médio, com comparação anual e análise por região e segmento.
+Visão geral dos principais indicadores, incluindo faturamento, lucro, margem, pedidos e ticket médio, com análises comparativas do desempenho comercial.
 
 ![Dashboard Executivo](imagens/01-visao-executiva.png)
 
 ### 2. Análise de Produtos
 
-Análise dos produtos com maior faturamento, maior lucro e maiores prejuízos, além da comparação de faturamento por categoria.
+Análise dos produtos com maior faturamento, maior lucro e maiores prejuízos, além da comparação por categoria.
 
 ![Análise de Produtos](imagens/02-produtos..png)
 
@@ -58,17 +49,30 @@ Avaliação do faturamento e do lucro dos segmentos Consumer, Corporate e Home O
 
 ![Análise de Segmentos](imagens/04-segmentos..png)
 
-
 ## 🔄 Etapas do projeto
 
 1. Leitura da base de dados com Python e Pandas.
 2. Inspeção, limpeza e preparação dos dados.
 3. Padronização dos nomes das colunas e tratamento dos tipos de dados.
 4. Carga dos dados no SQL Server utilizando SQLAlchemy.
-5. Criação de consultas e views SQL para apoiar as análises.
+5. Criação de views SQL para apoiar as análises.
 6. Modelagem dos dados no Power BI, incluindo a tabela calendário.
-7. Criação de medidas DAX, indicadores e visualizações interativas.
+7. Criação de medidas DAX, indicadores e visualizações.
 8. Desenvolvimento e organização das quatro páginas do dashboard.
+
+## 🗄️ Scripts SQL
+
+Os scripts estão disponíveis na pasta `SQL/`:
+
+- `vw_kpis_superstore.sql`: consolidação de indicadores por região, categoria e segmento.
+- `vw_produtos_superstore.sql`: indicadores de vendas e lucro por produto e categoria.
+- `vw_vendas_mensais.sql`: agregação dos indicadores por ano e mês.
+
+## 🐍 Script Python
+
+O script `Python/etl_superstore.py` demonstra o processo de ETL utilizado para ler o CSV, tratar os dados e carregá-los no SQL Server.
+
+Para executá-lo, é necessário configurar o ambiente local, instalar as dependências e ajustar o caminho do CSV e as variáveis de conexão ao SQL Server.
 
 ## 💡 Principais aprendizados
 
@@ -84,10 +88,17 @@ Avaliação do faturamento e do lucro dos segmentos Consumer, Corporate e Home O
 ```text
 superstore-business-intelligence/
 ├── README.md
-├── .gitignore
 ├── imagens/
-├── python/
-└── sql/
+│   ├── 01-visao-executiva.png
+│   ├── 02-produtos..png
+│   ├── 03-regioes..png
+│   └── 04-segmentos..png
+├── Python/
+│   └── etl_superstore.py
+└── SQL/
+    ├── vw_kpis_superstore.sql
+    ├── vw_produtos_superstore.sql
+    └── vw_vendas_mensais.sql
 ```
 
 ## 👨‍💻 Sobre o projeto
