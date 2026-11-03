@@ -1,3 +1,4 @@
+
 CREATE VIEW vw_kpis_superstore AS
 
 WITH vendas AS (
@@ -18,7 +19,10 @@ kpis AS (
         COUNT(DISTINCT Order_ID) AS total_pedidos,
         ROUND(SUM(Sales), 2) AS faturamento,
         ROUND(SUM(Profit), 2) AS lucro,
-        ROUND(AVG(Sales), 2) AS ticket_medio,
+        ROUND(
+            SUM(Sales) / NULLIF(COUNT(DISTINCT Order_ID), 0),
+            2
+        ) AS ticket_medio,
         SUM(Profit) / NULLIF(SUM(Sales), 0) AS margem_prct
     FROM vendas
     GROUP BY
