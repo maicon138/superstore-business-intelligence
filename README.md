@@ -44,19 +44,19 @@ Visão geral dos principais indicadores: faturamento, lucro, margem, pedidos e t
 
 Análise dos produtos com maior faturamento, maior lucro e maiores prejuízos, além da comparação de faturamento por categoria.
 
-![Análise de Produtos](imagens/02-produtos.png)
+![Análise de Produtos](imagens/02-produtos..png)
 
 ### 3. Análise Regional
 
 Comparação do faturamento e do lucro entre as regiões, acompanhada da evolução mensal das vendas.
 
-![Análise Regional](imagens/03-regioes.png)
+![Análise Regional](imagens/03-regioes..png)
 
 ### 4. Análise de Segmentos
 
 Avaliação do faturamento e do lucro dos segmentos Consumer, Corporate e Home Office, incluindo sua evolução mensal.
 
-![Análise de Segmentos](imagens/04-segmentos.png)
+![Análise de Segmentos](imagens/04-segmentos..png)
 
 
 ## 🔄 Etapas do projeto
