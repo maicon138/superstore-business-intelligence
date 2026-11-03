@@ -49,6 +49,12 @@ Avaliação do faturamento e do lucro dos segmentos Consumer, Corporate e Home O
 
 ![Análise de Segmentos](imagens/04-segmentos..png)
 
+## 📥 Acesso ao dashboard
+
+[Baixar o dashboard Power BI (.pbix)](./Superstore_Business_Intelligence.pbix)
+
+> Para abrir o arquivo, utilize o Power BI Desktop.
+
 ## 🔄 Etapas do projeto
 
 1. Leitura da base de dados com Python e Pandas.
