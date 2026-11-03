@@ -30,17 +30,34 @@ O projeto contempla preparação de dados com Python, armazenamento e consultas 
 
 O relatório foi organizado em quatro páginas:
 
+## 📈 Dashboard Interativo
+
+O dashboard foi desenvolvido no Power BI e está organizado em quatro páginas para explorar diferentes perspectivas do desempenho comercial.
+
 ### 1. Visão Executiva
-Visão geral dos principais indicadores de desempenho, com análise de faturamento, lucro, margem, pedidos, ticket médio e evolução mensal.
+
+Visão geral dos principais indicadores: faturamento, lucro, margem, pedidos e ticket médio, com comparação anual e análise por região e segmento.
+
+![Dashboard Executivo](imagens/01-visao-executiva.png)
 
 ### 2. Análise de Produtos
-Identificação dos produtos com maior faturamento, maior lucro e maiores prejuízos, apoiando a análise de rentabilidade.
+
+Análise dos produtos com maior faturamento, maior lucro e maiores prejuízos, além da comparação de faturamento por categoria.
+
+![Análise de Produtos](imagens/02-produtos.png)
 
 ### 3. Análise Regional
-Comparação do faturamento e do lucro entre as regiões, além da evolução mensal das vendas.
+
+Comparação do faturamento e do lucro entre as regiões, acompanhada da evolução mensal das vendas.
+
+![Análise Regional](imagens/03-regioes.png)
 
 ### 4. Análise de Segmentos
-Avaliação do desempenho dos segmentos Consumer, Corporate e Home Office, incluindo faturamento, lucro e evolução mensal.
+
+Avaliação do faturamento e do lucro dos segmentos Consumer, Corporate e Home Office, incluindo sua evolução mensal.
+
+![Análise de Segmentos](imagens/04-segmentos.png)
+
 
 ## 🔄 Etapas do projeto
 
