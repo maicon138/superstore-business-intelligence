@@ -6,7 +6,10 @@ SELECT
     COUNT(DISTINCT Order_ID) AS pedidos,
     ROUND(SUM(Sales), 2) AS faturamento,
     ROUND(SUM(Profit), 2) AS lucro,
-    ROUND(AVG(Sales), 2) AS ticket_medio
+    ROUND(
+        SUM(Sales) / NULLIF(COUNT(DISTINCT Order_ID), 0),
+        2
+    ) AS ticket_medio
 FROM Superstore
 GROUP BY
     Product_Name,
