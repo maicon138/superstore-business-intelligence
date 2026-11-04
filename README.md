@@ -84,6 +84,17 @@ Os scripts estão disponíveis na pasta `SQL/`:
 - `vw_produtos_superstore.sql`: indicadores de vendas e lucro por produto e categoria.
 - `vw_vendas_mensais.sql`: agregação dos indicadores por ano e mês.
 
+- ### Consultas analíticas
+
+Além das views SQL, o projeto contém consultas desenvolvidas para responder a perguntas de negócio:
+
+- **`analise_top_produtos.sql`**: identifica os 10 produtos com maior faturamento.
+- **`analise_produtos_prejuizo.sql`**: identifica produtos com lucro negativo e destaca os maiores prejuízos.
+- **`analise_desempenho_regional.sql`**: compara faturamento, lucro, quantidade de pedidos e margem de lucro entre as regiões.
+- **`analise_evolucao_mensal.sql`**: acompanha a evolução mensal do faturamento, lucro e quantidade de pedidos.
+
+As consultas utilizam recursos do SQL Server, como `GROUP BY`, `HAVING`, funções de agregação, `COUNT(DISTINCT)`, `ORDER BY` e `TOP`, aplicados à análise de desempenho comercial.
+
 ## 🐍 Script Python
 
 
